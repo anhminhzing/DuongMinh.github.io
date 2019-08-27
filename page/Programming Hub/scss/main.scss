@@ -1,0 +1,21 @@
+@import "base/_reset.scss";
+@import "base/_normalize.scss";
+
+@import "helpers/_variables.scss";
+@import "helpers/_mixin.scss";
+@import "helpers/_function.scss";
+@import "helpers/_extend.scss";
+@import "helpers/_animation.scss";
+
+@import "layouts/_header.scss";
+@import "layouts/_hero-home.scss";
+@import "layouts/_ph-rightway.scss";
+@import "layouts/_slick.scss";
+@import "layouts/_recognize.scss";
+@import "layouts/_opinion.scss";
+@import "layouts/_download.scss";
+@import "layouts/_footer.scss";
+
+@import "components/_buttons.scss";
+
+@import "vendors/_aos.scss";

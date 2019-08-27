@@ -1,0 +1,107 @@
+.about_me{
+    padding: 50px 0;
+    background-color: $color-black;
+    overflow: hidden;
+    .left{
+      
+        // background: red;
+        min-height: 400px;
+        height: 400px;
+        width: 100%;
+        position: relative;
+        @include respond-to('medium'){
+            margin-top: 100px;
+            height: 600px;
+        }
+        .image{
+            height: 400px;
+            width: 400px;
+            background-image: url('../img/Minhphoto.jpg');
+            background-position: center center;
+            background-size: cover;
+            // border-radius: 50%;
+            position: absolute;
+            z-index: 5;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(0px, 0px, 0px)  translate(-50%, -50%);
+            transform-style: preserve-3d;
+        }
+        .behind{
+            width: 50%;
+            height: 100%;
+            border: 5px solid white;
+            position: absolute;
+            top: 0%;
+            right: 16%;
+        }
+
+        .tilt {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        }
+        
+        .tilt__back,
+        .tilt__front {
+            width: 100%;
+            height: 100%;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        
+        .tilt__back {
+            position: relative;
+        }
+        
+        .tilt__front {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    .right{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        min-height: 400px;
+        @include respond-to('medium'){
+            margin-top: 100px;
+            height: 600px;
+        }
+        .content{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: $color-white;
+            h3{
+                padding-bottom: 10px;
+            }
+            .content_1{
+                width: 100%;
+                margin: auto;
+                .title{
+                    color: orange;
+                    // font-size: 20px;
+                }
+                .value{
+                    color: white;
+                    // font-size: 20px;
+                }
+                .button{
+                    text-align: left;
+                    padding-top: 20px;
+                    @include respond-to("medium"){
+                        text-align: center;
+                    }
+                }
+              
+            }
+        }
+    }
+}

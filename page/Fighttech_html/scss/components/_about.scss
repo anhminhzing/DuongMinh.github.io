@@ -1,0 +1,41 @@
+.about{
+    margin-bottom: 50px;
+    overflow: hidden;  
+    h3{
+        font-family: Boldfont;
+        margin-bottom: 50px;
+    }
+    .content{
+        display: flex;
+        margin-bottom: 30px; 
+        justify-content: center;
+        // overflow: hidden !important;
+        img{
+            max-width: 100%;
+            border-radius: 50%;
+        }
+        .detail{
+            text-align: left;
+            margin-left: 20px;
+            margin-top: 20px; 
+            p{
+                margin: 3px 0;
+                &.name{
+                    font-family: Boldfont;
+                    color: $color-orange;
+                } 
+                &.possition{
+                    font-family: Boldfont;
+                    color: $color-black;
+                } 
+                &.name{
+                    font-family: Boldfont;
+                    color: $color-orange;
+                } 
+            }
+        }
+    }
+    .animatedParent{
+        overflow: hidden !important;
+    }
+}

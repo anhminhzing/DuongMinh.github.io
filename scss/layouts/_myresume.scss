@@ -1,0 +1,40 @@
+.Resume{
+    background-color: $color-black;
+    padding: 50px 0;
+    h3{
+        color: $color-white;
+    }
+    .item{
+        padding: 20px;
+        border: 1px solid orange;
+        margin: 20px 0;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        transition: all 0.6s;
+        div{
+            h3{
+                font-size: 20px !important;
+                color: white;
+                padding: 10px 0;
+            }
+            p{
+                font-size: 14px;
+            }
+            .school{
+                color: $color-white;
+            }
+            .date{
+                color: grey;
+                font-size: 14px;
+            }
+        }
+        &:hover{
+            transform: translateY(-5px);
+            box-shadow: 0px 1px 2px 2px orange;
+        }
+        @include respond-to("medium"){
+            height: 350px;
+        }
+    }
+}

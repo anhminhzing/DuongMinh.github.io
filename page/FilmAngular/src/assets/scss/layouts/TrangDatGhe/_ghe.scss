@@ -1,0 +1,24 @@
+.Ghe{
+    width: 70px;
+    height: 30px;
+    margin: 5px ;
+    background-color: $color-blue-light;
+    color: white;
+    border: none;
+    box-shadow: none;
+}
+.GheDaDat{
+  
+    color: white;
+    margin: 5px ;
+    cursor: no-drop !important;
+    background-color: red;
+    width: 70px;
+    height: 30px;
+    margin: 5px ;
+    
+}
+.GheDangDat{
+    background-color: $color-yellow;
+    color: black;
+}

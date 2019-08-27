@@ -1,0 +1,246 @@
+/* GLOBAL SETTING */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.clear{
+    clear: both;
+}
+.title{
+    font-weight: bold;
+}
+/* BEGIN HEADER */
+.header{
+    border-bottom: 1px solid #80808085;
+}
+.slogan{
+    text-align: right;
+    float: right;
+    margin-right: 40px;
+}
+/* END HEADER */
+/* BEGIN NAVBAR */
+.navbar{
+    width: 100%;
+    height: 50px;;
+    border-bottom: 1px solid #80808085;
+}
+.navbar ul{
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    line-height: 50px;
+}
+.navbar ul li{
+    float: left;
+    padding: 0 9px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.active{
+    border-bottom: 2px solid red;
+}
+/* END NAVBAR */
+/* BEGIN CAROUSEL */
+.carousel{
+    margin: 40px 0;
+    width: 100%;
+    height: 440px;
+    background-image: url('images/slider_1.png');
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+/* END CAROUSEL */
+/* BEIGIN INTRODUCT */
+.introduct{
+    padding: 40px 0;
+    width: 100%;
+    text-align: center;
+}
+.introduct .content{
+    color: gray;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 5px;
+    font-weight: bold;
+}
+/* END INTRODUCT */
+/* BEGIN PRODUCTS */
+.products{
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+}
+.content{
+    margin-top: 10px;
+}
+.product-content{
+    width: 25%;
+    padding: 10px;
+    text-align: left;
+    float: left;
+    margin-top: 10px;
+}
+.product-content img{
+    width: 100%;
+    padding-bottom: 5px;
+}
+.product-content h3{
+    color: red;
+    font-weight: bold;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+.product-content p{
+    color: gray;
+    font-weight: bold;
+    font-size: 15px;
+}
+/* END PRODUCTS */
+/* BEGIN NEWS & EVENTS */
+.news{
+    width: 100%;
+    height: 600px;
+    padding: 10px;
+    text-align: center;
+}
+.news-content{
+    width: 100%;
+    height: 500px;
+    padding: 10px;
+    color: white;
+}
+.content-left{
+    width: 49%;
+    height: 100%;
+    margin-right: 10px;
+    float: left;
+    padding: 10px;
+    background-image: url('images/tin_tuc_1.png');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 5px solid brown;
+    
+}
+
+.content-left p{
+    margin-top: 438px;
+    background: #000000b3;
+    margin-left: -10px;
+    margin-right: -10px;
+    font-size: 20px;
+}
+
+.content-right{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.right-event{
+    background-size: cover;
+    background-position: center;
+    float: left;
+    width: 48%;
+    height: 48%;
+    margin-left: 12px;
+    margin-top: 19px;
+    border-bottom: 5px solid brown;
+}
+ .n1{
+    background-image: url('images/tin_tuc_2.png');
+}
+ .n2{
+    background-image: url('images/tin_tuc_3.png');
+}
+ .n3{
+    background-image: url('images/tin_tuc_4.png');
+}
+.n4{
+    background-image: url('images/tin_tuc_5.png');
+}
+.n1 , .n2{
+    margin-top: 0px;
+}
+.right-event p{
+    background: #000000b3;
+    margin-top: 180px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/* END NEWS & EVENTS */
+/* BEGIN CONTACT */
+.contact{
+    width: 100%;
+    background-image: url('images/bg_banner.png');
+    color: white;
+}
+.contact .title{
+    margin: 10px 0;
+}
+.contact_left{
+    padding: 10px;
+    width: 50%;
+    float: left;
+}
+.contact_left .address{
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+}
+.contact_left .address img{
+    float: left;
+}
+.contact_left p{
+    text-align: left;
+    line-height: 22px;
+    float: left;
+    margin-bottom: 10px;
+}
+.contact_left .map{
+    width: 100%;
+}
+.contact_right{
+    width: 50%;
+    float: left;
+    margin: 10px 0;
+    color: white;
+    padding-left: 20px;
+}
+.contact_right h1{
+    margin: 10px 0;
+}
+.form_content{
+    width: 90%;
+    padding: 10px 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: #f58a8a;
+}
+.contact_right textarea{
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #f58a8a;
+    border-radius: 10px;
+}
+.contact_right button{
+    margin-top: 10px;
+    padding: 5px 10px;
+    margin-left: 100px;
+    width: 200px;
+    height: 50px;
+    color: #a20202;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.contact_right button:hover{
+    background: #a20202;
+    color: white;
+}
+/* END CONTACT */

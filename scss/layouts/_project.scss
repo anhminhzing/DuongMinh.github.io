@@ -1,0 +1,32 @@
+.project{
+    background-color: $color-black;
+    width: 100%;
+    // overflow: hidden;
+    padding: 50px 0;
+    .item{
+        min-height: 250px;
+        border: 1px solid orange;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        transition: all 0.5s !important;
+        // box-shadow: 0px 0px 0px 0px black;
+        div{
+            text-align: center;
+            padding: 20px;
+            p{
+                padding: 20px 0;
+            }
+            @include respond-to("medium"){
+                padding: 5px;
+            }
+            
+        }
+        &:hover{
+            transform: translateY(-5px) !important;
+            box-shadow: 0px 1px 2px 2px orange;
+            border: 1px solid orange;
+        }
+       
+    }
+}

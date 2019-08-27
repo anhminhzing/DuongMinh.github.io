@@ -1,0 +1,211 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box; }
+
+.clear {
+  clear: both; }
+
+h1 {
+  color: #00aaf1;
+  font-size: 46px;
+  font-weight: bold; }
+
+.tiki-app {
+  width: 100%;
+  background-color: #f6f6f6; }
+
+.feature {
+  padding: 10px; }
+  .feature .content {
+    padding-left: 120px;
+    margin-bottom: 50px; }
+    @media screen and (max-width: 992px) {
+      .feature .content h1 {
+        text-align: center; } }
+    @media screen and (max-width: 576px) {
+      .feature .content h1 {
+        font-size: 30px; } }
+    .feature .content p {
+      margin-left: 10px; }
+      @media screen and (max-width: 992px) {
+        .feature .content p {
+          text-align: center; } }
+      @media screen and (max-width: 576px) {
+        .feature .content p {
+          font-size: 14px; } }
+    .feature .content ul {
+      list-style: none;
+      margin-left: 10px; }
+      .feature .content ul li {
+        margin-bottom: 10px;
+        position: relative;
+        padding-left: 30px;
+        text-align: left; }
+        .feature .content ul li::before {
+          content: "\f00c";
+          color: #00aaf1;
+          display: inline-block;
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: inherit;
+          position: absolute;
+          top: 3px;
+          left: 0px;
+          -webkit-font-smoothing: antialiased; }
+        @media screen and (max-width: 576px) {
+          .feature .content ul li {
+            font-size: 14px; } }
+      @media screen and (max-width: 992px) {
+        .feature .content ul {
+          padding-left: 25%; } }
+      @media screen and (max-width: 768px) {
+        .feature .content ul {
+          padding-left: 20%; } }
+      @media screen and (max-width: 576px) {
+        .feature .content ul {
+          padding-left: 10%; } }
+    .feature .content .link {
+      display: flex;
+      justify-content: flex-start; }
+      .feature .content .link a {
+        width: 135px;
+        margin-right: 20px; }
+        .feature .content .link a:hover img {
+          opacity: 0.8; }
+      @media screen and (max-width: 992px) {
+        .feature .content .link {
+          justify-content: center; } }
+    @media screen and (max-width: 992px) {
+      .feature .content {
+        padding-left: 0;
+        margin-top: 50px; } }
+
+.banner-middle a img {
+  width: 100%; }
+.banner-middle .content {
+  width: 60%;
+  margin: auto;
+  text-align: center; }
+  @media screen and (max-width: 992px) {
+    .banner-middle .content {
+      width: 100%; } }
+  @media screen and (max-width: 768px) {
+    .banner-middle .content {
+      width: 100%; } }
+  @media screen and (max-width: 576px) {
+    .banner-middle .content {
+      width: 100%;
+      text-align: left; }
+      .banner-middle .content p {
+        font-size: 14px; } }
+
+.presentation {
+  position: relative; }
+  .presentation .item {
+    min-height: 300px; }
+  .presentation .content {
+    width: 90%;
+    clear: both;
+    text-align: right;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    padding-left: 100px; }
+    .presentation .content h3 {
+      text-transform: uppercase;
+      color: #00aaf1;
+      font-weight: 600;
+      line-height: 1.45;
+      margin-top: 0;
+      margin-bottom: 5px;
+      font-size: 30px; }
+    @media screen and (max-width: 992px) {
+      .presentation .content {
+        width: 100%;
+        text-align: center;
+        top: 0;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        padding-left: 0px; } }
+    @media screen and (max-width: 768px) {
+      .presentation .content p {
+        font-size: 20px; } }
+    @media screen and (max-width: 576px) {
+      .presentation .content {
+        width: 90%;
+        text-align: center;
+        top: 0;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        padding-left: 0px; } }
+  .presentation .item-img {
+    width: 100%;
+    text-align: center; }
+    .presentation .item-img .img-holder {
+      position: relative;
+      display: inline-block;
+      width: auto; }
+      .presentation .item-img .img-holder img:nth-child(1) {
+        position: relative; }
+      .presentation .item-img .img-holder img:nth-child(2) {
+        position: absolute;
+        top: 11.5%;
+        left: 6%;
+        z-index: 1;
+        border-radius: 4px;
+        width: 88%; }
+  .presentation.present-blue {
+    background-color: #00aaf1;
+    padding: 50px 0;
+    transform: skewY(5deg);
+    -webkit-transform: skewY(5deg);
+    -moz-transform: skewY(5deg);
+    -ms-transform: skewY(5deg);
+    -o-transform: skewY(5deg); }
+    .presentation.present-blue .cover {
+      transform: skewY(-5deg);
+      -webkit-transform: skewY(-5deg);
+      -moz-transform: skewY(-5deg);
+      -ms-transform: skewY(-5deg);
+      -o-transform: skewY(-5deg);
+      margin-bottom: 50px; }
+    .presentation.present-blue .content {
+      text-align: left;
+      color: white; }
+      .presentation.present-blue .content h3 {
+        color: white; }
+      @media screen and (max-width: 992px) {
+        .presentation.present-blue .content {
+          text-align: center; } }
+
+.download {
+  background-color: #00aaf1;
+  color: white; }
+  .download img {
+    width: 100%; }
+  .download .link {
+    display: flex;
+    justify-content: center; }
+    .download .link a {
+      width: 135px;
+      margin-right: 20px; }
+      .download .link a:hover img {
+        opacity: 0.8; }
+    @media screen and (max-width: 992px) {
+      .download .link {
+        justify-content: center; } }
+
+/*# sourceMappingURL=main.css.map */

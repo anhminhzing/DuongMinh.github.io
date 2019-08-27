@@ -1,0 +1,31 @@
+@mixin  Button($pd-x, $pd-y, $color, $font-s, $bg-color) {
+    padding: $pd-x $pd-y;
+    font-size: $font-s;
+    background-color: $bg-color;
+    color: $color;
+    border: 1px solid white;
+}
+@mixin text($font-w, $color, $font-s) {
+    font-weight: $font-w;
+    color: $color;
+    font-size: $font-s;
+}
+@mixin respond-to ($breakpoint){
+    @if (map-has-key($map: $breakpoints, $key: $breakpoint)){
+        $value : map-get($map: $breakpoints, $key: $breakpoint);
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    }
+}
+@mixin  button {
+    padding: $pd-1 $pd-2;
+    color: $color-blue;
+    background: white;
+    border: 1px solid $color-blue;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}

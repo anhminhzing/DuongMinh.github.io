@@ -1,0 +1,12 @@
+.ph-rightway{
+    .item{
+        @include respond-to('small'){
+            h1{
+                font-size: 30px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}

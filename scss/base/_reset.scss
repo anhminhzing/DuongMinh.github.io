@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    scroll-behavior: smooth; 
+    
+}
+@font-face {
+    font-family: "Roboto Mono";
+    src: url("../font/RobotoMono-Regular.ttf");
+}
+@font-face {
+    font-family: "Roboto Mono lighter";
+    src: url("../font/RobotoMono-Thin.ttf");
+}
+html, body {
+    font-family: 'Roboto Mono' !important;
+}
+.clear{
+    clear: both;
+}
+p{
+    font-weight: 300 !important;
+    // letter-spacing: -2px;
+    color: grey;
+}

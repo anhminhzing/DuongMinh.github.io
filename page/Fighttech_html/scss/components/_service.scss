@@ -1,0 +1,70 @@
+.service{
+    width: 100%;
+    padding: 20px 0;
+    background-image: url('../imges/ellipse-4.png');
+    background-position: right top;
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 50px; 
+    h3{
+        font-family: Boldfont;
+        margin: 50px 0;
+    }
+    .content{
+        // height: 400px;
+        width: 100%;
+        .row{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 0 !important;
+        }
+        .card{
+            padding: 20px ;
+            // width: 300px;
+            margin: auto;
+            border: none;
+            box-shadow: 0 0 3px 0 #00000059;
+           
+            img{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            p{
+                text-align: center;
+                color: $color-orange;
+                font-family: Boldfont;
+            }
+            @include respond-to('large'){
+                margin: 20px auto;
+                width: 400px;
+            }
+            @include respond-to('medium'){
+                margin: 20px auto;
+                width: 400px;
+            }
+            @include respond-to('small'){
+                width: 250px ;
+            }
+
+            &.center{
+                width: 400px;
+                padding: 20px;
+                margin: auto;
+                border: none;
+                box-shadow: 0 0 3px 0 #00000059;
+                @include respond-to('large'){
+                    width: 400px;
+                }
+                @include respond-to('medium'){
+                    width: 400px ;
+                }
+                @include respond-to('small'){
+                    width: 250px ;
+                }
+            }
+        }
+        
+    }
+}

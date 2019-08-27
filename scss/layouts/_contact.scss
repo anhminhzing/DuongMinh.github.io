@@ -1,0 +1,80 @@
+.contact{
+    background: $color-black;
+    padding: 20px 0;
+    .left_content{
+        h3{
+            color: $color-white;
+            padding-bottom: 20px; 
+        }
+        .title{
+            color: orange;
+            .value{
+                color: $color-white;
+            }
+        }
+        .icon{
+           
+            a{
+                text-decoration: none;
+                border: 1px solid $color-white;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                margin-right: 10px;
+                position: relative;
+                display: inline-block;
+                text-align: center;
+                transition: all 0.6s;
+                i{
+                    position: absolute;
+                    color: $color-white;
+                    font-size: 20px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                &:hover{
+                    background: orange;
+                }
+            }
+            @include respond-to("medium"){
+                text-align: center;
+            }
+        }
+        @include respond-to("medium"){
+            margin-bottom: 20px;
+        }
+    }
+    form{
+        input{
+            background: transparent !important;
+            padding: 10px 0 !important;
+            outline: none !important;
+            border: 0px solid transparent;
+            border-bottom: 1px solid $color-white;
+            color: $color-white !important;
+            box-shadow: none !important;
+            border-radius: 0;
+            &:focus{
+                outline: none;
+                border-bottom: 1px solid $color-white;
+            }
+            
+        }
+        textarea{
+            background: transparent !important;
+            padding: 10px 0 !important;
+            outline: none !important;
+            border: 0px solid transparent;
+            border-bottom: 1px solid $color-white;
+            color: $color-white !important;
+            box-shadow: none !important;
+            border-radius: 0;
+            &:focus{
+                outline: none;
+                border-bottom: 1px solid $color-white;
+            }
+            
+        }
+    }
+}

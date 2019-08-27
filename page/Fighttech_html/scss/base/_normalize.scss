@@ -1,0 +1,27 @@
+@font-face {
+    font-family: BoldFont;
+    src: url(../font/utmavobold.ttf);
+}
+@font-face{
+    font-family: normalFont;
+    src: url(../font/utm-avo.ttf);
+}
+@font-face{
+    font-family: footerFont;
+    src: url(../font/FACEBOLF.OTF);
+}
+*{
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0 ;
+    padding: 0 ;
+    font-family: normalFont;
+    font-weight: 500;
+}
+html{
+    scroll-behavior: smooth;
+}
+.clear{
+    clear: both;
+}
+.row:before, .row:after {display: none !important;}

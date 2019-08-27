@@ -1,0 +1,35 @@
+$color-black: black;
+$color-white: white;
+$color-bg: #f6f6f6;
+$color-main: #00aaf1;
+
+
+$pd-0: 5px;
+$pd-1: 10px;
+$pd-2: 20px;
+$pd-3:30px;
+$pd-4:4%;
+$pd-5:7%;
+
+$mg-1:10px;
+$mg-2: 20px;
+$mg-3:30px;
+$mg-4:40px;
+$mg-5:50px;
+$mg-6:200px;
+
+$fs-0:13px;
+$fs-1:16px;
+$fs-2:17px;
+$fs-3:20px;
+$fs-4:30px;
+$fs-5:40px;
+
+$fw-bold:bold;
+$fw-normal:normal;
+
+$breakpoints:(
+    'large': 992px,
+    'medium': 768px,
+    'small': 576px,
+);

@@ -1,0 +1,127 @@
+<form #frmDangKy="ngForm" (ngSubmit)="dangKi(frmDangKy.value)">
+  <div class="row">
+      <div class="col-12">
+          <div class="form-group">
+              <input type="text" class="form_basic"
+              [ngClass]="{'erro': TaiKhoan.invalid && (TaiKhoan.touched || TaiKhoan.dirty), 'my_form':TaiKhoan.valid || TaiKhoan.untouched && !TaiKhoan.dirty   }"  name="TaiKhoan" aria-describedby="helpId" placeholder="Tài khoản" 
+              #TaiKhoan='ngModel' ngModel required>
+              <span class="focus-border">
+                  <i></i>
+              </span>
+              <div *ngIf="(TaiKhoan.touched || TaiKhoan.dirty) && TaiKhoan.errors ">
+                  <div *ngIf="TaiKhoan.errors.required" class="text-danger">
+                      Tài khoản không được rổng !
+                  </div>
+              </div>
+              <i [ngClass]="{'erro':TaiKhoan.invalid && (TaiKhoan.touched || TaiKhoan.dirty)}" class="fa fa fa-user"></i>
+          </div>
+      </div>
+      <div class="col-12">
+          <div class="form-group">
+              <input type="text" class="form_basic"
+              [ngClass]="{'erro': HoTen.invalid && (HoTen.touched || HoTen.dirty), 'my_form':HoTen.valid || HoTen.untouched && !HoTen.dirty  && !HoTen.errors.pattern }" pattern="^[a-zA-Z_ \\s]+$"  name="HoTen" aria-describedby="helpId" placeholder="Họ tên" 
+              #HoTen='ngModel' ngModel required>
+              <span class="focus-border">
+                  <i></i>
+              </span>
+              <div *ngIf="(HoTen.touched || HoTen.dirty) && HoTen.errors ">
+                  <div *ngIf="HoTen.errors.required" class="text-danger">
+                      Họ tên không được rổng !
+                  </div>
+                  <div *ngIf="HoTen.errors.pattern" class="text-danger">
+                      Họ tên không đúng định dạng
+                  </div>
+              </div>
+              <i [ngClass]="{'erro':HoTen.invalid && (HoTen.touched || HoTen.dirty)}" class="fa fa fa-user"></i>
+          </div>
+      </div>
+      <div class="col-12">
+          <div class="form-group">
+              <input type="text"
+              class="form_basic" name="SoDT" aria-describedby="helpId" placeholder="Số điện thoại"  name="SoDT"
+              [ngClass]="{'erro': SoDT.invalid && (SoDT.touched || SoDT.dirty), 'my_form':SoDT.valid || SoDT.untouched && !SoDT.dirty  && !SoDT.errors.pattern }"
+              #SoDT='ngModel' pattern="(09|01[2|6|8|9])+([0-9]{8})\b" ngModel required>
+              <span class="focus-border">
+                  <i></i>
+              </span>
+              <div *ngIf="(SoDT.touched || SoDT.dirty) && SoDT.errors ">
+                  <div *ngIf="SoDT.errors.required" class="text-danger">
+                      Số điện thoại không được rổng !
+                  </div>
+                  <div *ngIf="SoDT.errors.pattern" class="text-danger">
+                      Số điện thoại không đúng định dạng
+                  </div>
+              </div>
+              <i [ngClass]="{'erro':SoDT.invalid && (SoDT.touched || SoDT.dirty)}" class="fa fa fa-phone"></i>
+          </div>
+      </div>
+      
+      <div class="col-12">
+          <div class="form-group">
+              <input name="Email" type="Email" class="form_basic"
+              [ngClass]="{'erro': Email.invalid && (Email.touched || Email.dirty), 'my_form':Email.valid || Email.untouched && !Email.dirty  && !Email.errors.pattern }"  placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"  name="Email"
+              #Email='ngModel' ngModel required>
+              <span class="focus-border">
+                  <i></i>
+              </span>
+              <div *ngIf="(Email.touched || Email.dirty) && Email.errors ">
+                  <div *ngIf="Email.errors.required" class="text-danger">
+                      Email không được rổng !
+                  </div>
+                  <div *ngIf="Email.errors.pattern" class="text-danger">
+                      Email không đúng định dạng
+                  </div>
+              </div>
+              <i [ngClass]="{'erro':Email.invalid && (Email.touched || Email.dirty)}" class="fa fa-envelope"></i>
+          </div>
+      </div>
+      <div class="col-12">
+          <div class="form-group">
+              <input name=MatKhau type="password"
+              class="form_basic"
+              [ngClass]="{'erro': MatKhau.invalid && (MatKhau.touched || MatKhau.dirty), 'my_form':MatKhau.valid || MatKhau.untouched && !MatKhau.dirty  && !MatKhau.errors.pattern }"
+              placeholder="Mật khẩu" 
+              #MatKhau='ngModel' ngModel required>
+              <span class="focus-border">
+                  <i></i>
+              </span>
+              <div *ngIf="(MatKhau.touched || MatKhau.dirty) && MatKhau.errors ">
+                  <div *ngIf="MatKhau.errors.required" class="text-danger">
+                      password không được rổng !
+                  </div>
+                 
+              </div>
+              <i [ngClass]="{'erro':MatKhau.invalid && (MatKhau.touched || MatKhau.dirty)}" class="fa fa-lock"></i>
+          </div>
+      </div>
+      <div class="col-12">
+          <div class="form-group">
+              <input  type="password"
+              class="form_basic my_form"  placeholder="Xác nhận mật khẩu"  name="reMatKhau"
+              #reMatKhau='ngModel'
+              [ngClass]="{'erro': reMatKhau.invalid && (reMatKhau.touched || reMatKhau.dirty), 'my_form':reMatKhau.valid || reMatKhau.untouched && !reMatKhau.dirty  && !reMatKhau.errors.pattern }"
+               ngModel required>
+             
+              <span class="focus-border">
+                  <i></i>
+              </span>
+              <div *ngIf="(reMatKhau.touched || reMatKhau.dirty) && reMatKhau.errors ">
+                  <div *ngIf="reMatKhau.errors.required" class="text-danger">
+                      xác nhận password không được rổng !
+                  </div>
+              </div>
+             
+              <i [ngClass]="{'erro':reMatKhau.invalid && (reMatKhau.touched || reMatKhau.dirty)}" class="fa fa-lock"></i>
+          </div>
+          <div *ngIf="(reMatKhau.touched || reMatKhau.dirty) && reMatKhau.errors || reMatKhau.value != MatKhau.value">
+                  <div *ngIf="kiemTraMatKhau(reMatKhau,MatKhau)" class="text-danger">
+                      Mật khẩu không trùng khớp
+                  </div>
+              </div>
+      </div>
+      <div class="col-12 form-group text-right">
+          <button class="btn btnSubmit" type="submit" [disabled]="frmDangKy.invalid">Xác nhận</button>
+      </div>
+  </div>
+</form>
+

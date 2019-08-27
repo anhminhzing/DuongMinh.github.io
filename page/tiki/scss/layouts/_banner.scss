@@ -1,0 +1,25 @@
+.banner-middle{
+    a{
+        img{
+            width: 100%;
+        }
+    }
+    .content{
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        @include respond-to("large"){
+            width: 100%;
+        }
+        @include respond-to("medium"){
+            width: 100%;
+        }
+        @include respond-to("small"){
+            width: 100%;
+            text-align: left;
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}

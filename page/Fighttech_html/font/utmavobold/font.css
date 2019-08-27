@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'utmavobold';
+	src: url('./utmavobold.eot');
+	src: local('utmavobold'), url('./utmavobold.woff') format('woff'), url('./utmavobold.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_40182">Text with this font applied</p> */
+.fontsforweb_fontid_40182 {
+	font-family: 'utmavobold' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */

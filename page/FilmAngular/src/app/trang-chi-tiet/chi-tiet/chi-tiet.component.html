@@ -1,0 +1,174 @@
+<section class="col-12 film_detail_container">
+  <div class="col-12 film_warp">
+      <div class="col-12 film_bar">
+          
+      </div>
+      <div class="col-12 film">
+          <div class="col-xs-12 col-sm-12 col-lg-6 col-xl-6 left_content">
+              <div class="avatar_film" [ngStyle]="{'background-image': getUrl_Img()}" >
+                    <!-- <img [src]="phim.HinhAnh" alt=""> -->
+                  <div class="backdrop">
+                      <a data-toggle="modal" data-target="#modal_trailer" >
+                          <i class="fa fa-play"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-lg-6 col-xl-6 right_content">
+              <div class="right_content_wrap">
+                  <div class="d-flex right_content_up">
+                      <div class="right_content_up_left">
+                          <h5>{{phim.TenPhim}}</h5>
+                          <p class="date_film"><span>Ngày: </span>
+                            <!-- {{ngayHomNay | date:'dd-MM-yyyy'}} -->
+                             {{phim.NgayKhoiChieu |  date:'dd/MM/yyyy  h:mm a'}}</p>
+                          <p><span>Thể loại:</span> Hành Động, Phiêu Lưu, Giả Tưởng</p>
+                          <p><span>Đạo diễn:</span> Anthony Russo, Joe Russo</p>
+                      </div>
+                      <div class="right_content_up_right">
+                          <p>Đánh giá:</p>
+                          <div class="star_wrap">
+                              <p>{{phim.DanhGia}}</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="right_content_down">
+                      <p>{{phim.MoTa}}</p>
+                      <button (click)="DatVe()" routerLink='/datve' [queryParams]='{MaPhim:phim.MaPhim}' class="btn btnSubmit"> Mua vé </button>
+                  </div>
+              </div>
+             
+          </div>
+      </div>
+      <div class="col-12 film_bar">
+          
+      </div>
+
+  </div>
+</section>
+
+<div class="modal fade"  id="modal_trailer" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>    
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe #video class="embed-responsive-item"  [src]='getIframeYouTubeUrl(url)' id="video"  allowscriptaccess="always"></iframe>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+  
+  
+<!-- ------------------------------------------ film detail end  ----------------------------------------------- -->
+
+<!-- ------------------------------------------ lich chieu begin  ----------------------------------------------- -->
+
+<section class="title_calendar_film">
+ <div class="calendar_wrap">
+      <img src="./assets/img/film-title.png" alt="image title film">
+      <span>Lịch chiếu</span>
+  </div>
+</section>
+
+
+<!-- <section class="movie_theaters">
+  <ul>
+      <li>
+          <a href="#galaxy" class="item_galaxy">
+              <span class="movie_theaters_avatar galaxy"></span>
+              <span class="title_text">Galaxy Cinema</span>
+          </a>
+      </li>
+      <li>
+              <a href="#lotte" class="item_lotte">
+                  <span class="movie_theaters_avatar lotte"></span>
+                      <span class="title_text">Lotte Cinema</span>
+                  </a>
+      </li>
+      <li>
+              <a href="#cgv" class="item_cgv">
+                  <span class="movie_theaters_avatar cgv"></span>
+                      <span class="title_text">CGV Cinema</span>
+                  </a>
+      </li>
+  </ul>
+</section> -->
+
+<!-- ------------------------------------------ movie theater end  ----------------------------------------------- -->
+
+
+
+<section class="movie_theaters_info">
+    <div class="movie_theaters_info_wrap">
+        <div id="galaxy" class="info_galaxy">
+            <div class="galaxy_wrap">
+                <div class="tab" *ngFor="let lichchieu of phim.LichChieu, let i = index">
+                    <input name="checkbox-tabs-group" type="radio" id='checkbox{{i}}' class="checkboxtab" checked>
+                    <label for="checkbox{{i}}">
+                        <p>Thứ {{i + 1}}</p>
+                        <p>{{lichchieu.NgayChieuGioChieu | date :'MM/dd'}}</p>
+                    </label>
+                    <div class="content">
+                        <div class="content_wrap">
+                           <div class="item_theater">
+                                <div class="avatar_theater theater_1"></div>
+                                <div class="info_theater">
+                                    <div class="name_theater">
+                                        <p>RẠP GALAXY TÂN BÌNH</p>
+                                        <p>246 Nguyễn Hồng Đào, Tân Bình, TPHCM</p>                                     
+                                    </div>
+                                    <div class="date_coming">
+                                        <ul>
+                                            <li >
+                                                <a  (click)="DatVe()" routerLink='/datve' [queryParams]='{MaPhim:phim.MaPhim, MaLichChieu: lichchieu.MaLichChieu, LichChieu: lichchieu.NgayChieuGioChieu, TenRap:lichchieu.Rap.TenRap}'>{{lichchieu.NgayChieuGioChieu | date :'h:mm a'}}</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                           </div>
+                           <div class="item_theater">
+                                <div class="avatar_theater theater_2"></div>
+                                <div class="info_theater">
+                                    <div class="name_theater">
+                                        <p>RẠP GALAXY KINH DƯƠNG VƯƠNG</p>
+                                        <p>246 Nguyễn Hồng Đào, Tân Bình, TPHCM</p>                                     
+                                    </div>
+                                    <div class="date_coming">
+                                        <ul>
+                                            <li >
+                                                <a  (click)="DatVe()" routerLink='/datve' [queryParams]='{MaPhim:phim.MaPhim, MaLichChieu: lichchieu.MaLichChieu, LichChieu: lichchieu.NgayChieuGioChieu, TenRap:lichchieu.Rap.TenRap}'>{{lichchieu.NgayChieuGioChieu | date :'h:mm a'}}</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item_theater">
+                                <div class="avatar_theater theater_3"></div>
+                                <div class="info_theater">
+                                    <div class="name_theater">
+                                        <p>RẠP GALAXY KINH DƯƠNG VƯƠNG</p>
+                                        <p>246 Nguyễn Hồng Đào, Tân Bình, TPHCM</p>                                     
+                                    </div>
+                                    <div class="date_coming">
+                                        <ul>
+                                            <li >
+                                                <a  (click)="DatVe()" routerLink='/datve' [queryParams]='{MaPhim:phim.MaPhim, MaLichChieu: lichchieu.MaLichChieu, LichChieu: lichchieu.NgayChieuGioChieu, TenRap:lichchieu.Rap.TenRap}'>{{lichchieu.NgayChieuGioChieu | date :'h:mm a'}}</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>

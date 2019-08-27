@@ -1,0 +1,30 @@
+@import "base/_reset.scss";
+@import "base/_normalize.scss";
+
+@import "helpers/_variables.scss";
+@import "helpers/_mixin.scss";
+@import "helpers/_function.scss";
+@import "helpers/_extend.scss";
+@import "helpers/_animation.scss";
+
+@import "layouts/_header.scss";
+@import "layouts/_carousel.scss";
+@import "layouts/_about_me.scss";
+@import "layouts/_work.scss";
+@import "layouts/_myresume.scss";
+@import "layouts/_project.scss";
+@import "layouts/_contact.scss";
+@import "layouts/_footer.scss";
+@import "layouts/preload";
+
+
+
+
+
+
+@import "components/_buttons.scss";
+@import "components/text.scss";
+
+
+
+// @import "vendors/_aos.scss";

@@ -1,0 +1,336 @@
+// hiển thị trên màn hình điện thoại
+@media (min-width: 320px){
+    .movie_theaters{
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        ul{
+            width: 80%;
+            list-style: none;
+            height: auto;
+            display: block;
+            li{
+                width: 100%;
+                height: 68px;
+                &:nth-child(2){
+                    margin-top: 20px;
+                }
+                &:nth-child(3){
+                    margin-top: 20px;
+                }
+                a{
+                    display: block;
+                    width: 100%;
+                    height:100%;
+                    text-decoration: none;
+                    display: flex;
+                    &.item_galaxy span:nth-child(2), &.item_lotte span:nth-child(2), &.item_cgv span:nth-child(2){
+                        transition:0.5s;
+                    -webkit-transition:0.5s;
+                    -moz-transition:0.5s;
+                    -ms-transition:0.5s;
+                    -o-transition:0.5s;
+                    }
+                    &.item_galaxy:hover>span:nth-child(2){
+                        color: $color-orange;
+                    }
+                    &.item_lotte:hover > span:nth-child(2){
+                        color: $color-red;
+                    }
+                    &.item_cgv:hover > span:nth-child(2){
+                        color: $color-red;
+                    }
+                    .movie_theaters_avatar{
+                        width: 21%;
+                        height: 90%;
+                        display: inline-block;
+                        border-radius: 100%;                    ;
+                        -webkit-border-radius: 100%                    ;
+                        -moz-border-radius: 100%                    ;
+                        -ms-border-radius: 100%                    ;
+                        -o-border-radius: 100%                    ;
+                        &.galaxy{
+                            background-image: url('../img/galaxy-cinema.png');
+                            background-size: contain;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                        }
+                        &.lotte{
+                            background-image: url('../img/lotte-cinema-vi-t-nam-logo.png');
+                            background-size: contain;
+                            background-position: center;
+                        }
+                        &.cgv{
+                            background-image: url('../img/512x512bb.jpg');
+                            background-size: contain;
+                            background-position: center;
+                        }
+}
+                    .title_text{
+                        width: 71%;
+                        height: 100%;
+                        padding-left: 10px;
+                        display: inline-block;
+                        line-height: 80px;
+                        color: $color-black;
+                        font-size: $fs-3;
+                    }
+                }
+            }
+        }
+    }
+}
+// hiển thị trên màn hình ipad, màn hình điện thoại nằm ngang
+@media (min-width: 768px){
+    .movie_theaters{
+        width: 100%;
+        height: 68px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        ul{
+            width: 83%;
+            list-style: none;
+            height: 100%;
+            display: flex;
+            li{
+                width: 33.3333333333%;
+                height: 100%;
+                &:nth-child(2){
+                    margin-top: 0px;
+                }
+                &:nth-child(3){
+                    margin-top: 0px;
+                }
+                a{
+                    display: block;
+                    width: 100%;
+                    height:100%;
+                    text-decoration: none;
+                    display: flex;
+                    &.item_galaxy span:nth-child(2), &.item_lotte span:nth-child(2), &.item_cgv span:nth-child(2){
+                        transition:0.5s;
+                    -webkit-transition:0.5s;
+                    -moz-transition:0.5s;
+                    -ms-transition:0.5s;
+                    -o-transition:0.5s;
+                    }
+                    &.item_galaxy:hover>span:nth-child(2){
+                        color: $color-orange;
+                    }
+                    &.item_lotte:hover > span:nth-child(2){
+                        color: $color-red;
+                    }
+                    &.item_cgv:hover > span:nth-child(2){
+                        color: $color-red;
+                    }
+                    .movie_theaters_avatar{
+                        width: 29%;
+                        height: 90%;
+                        display: inline-block;
+                        border-radius: 100%;                    ;
+                        -webkit-border-radius: 100%                    ;
+                        -moz-border-radius: 100%                    ;
+                        -ms-border-radius: 100%                    ;
+                        -o-border-radius: 100%                    ;
+                        &.galaxy{
+                            background-image: url('../img/galaxy-cinema.png');
+                            background-size: contain;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                        }
+                        &.lotte{
+                            background-image: url('../img/lotte-cinema-vi-t-nam-logo.png');
+                            background-size: contain;
+                            background-position: center;
+                        }
+                        &.cgv{
+                            background-image: url('../img/512x512bb.jpg');
+                            background-size: contain;
+                            background-position: center;
+                        }
+}
+                    .title_text{
+                        width: 71%;
+                        height: 100%;
+                        padding-left: 10px;
+                        display: inline-block;
+                        line-height: 80px;
+                        color: $color-black;
+                        font-size: $fs-3;
+                    }
+                }
+            }
+        }
+    }
+}
+// hiển thị trên màn hình desktop thường và màn hình ipad nằm ngang
+@media (min-width: 996px){
+    .movie_theaters{
+        width: 100%;
+        height: 80px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        ul{
+            width: 71%;
+            list-style: none;
+            height: 100%;
+            display: flex;
+            li{
+                width: 33.3333333333%;
+                height: 100%;
+                &:nth-child(2){
+                    margin-top: 0px;
+                }
+                &:nth-child(3){
+                    margin-top: 0px;
+                }
+                a{
+                    display: block;
+                    width: 100%;
+                    height:100%;
+                    text-decoration: none;
+                    display: flex;
+                    &.item_galaxy span:nth-child(2), &.item_lotte span:nth-child(2), &.item_cgv span:nth-child(2){
+                        transition:0.5s;
+                    -webkit-transition:0.5s;
+                    -moz-transition:0.5s;
+                    -ms-transition:0.5s;
+                    -o-transition:0.5s;
+                    }
+                    &.item_galaxy:hover>span:nth-child(2){
+                        color: $color-orange;
+                    }
+                    &.item_lotte:hover > span:nth-child(2){
+                        color: $color-red;
+                    }
+                    &.item_cgv:hover > span:nth-child(2){
+                        color: $color-red;
+                    }
+                    .movie_theaters_avatar{
+                        width: 29%;
+                        height: 90%;
+                        display: inline-block;
+                        border-radius: 100%;                    ;
+                        -webkit-border-radius: 100%                    ;
+                        -moz-border-radius: 100%                    ;
+                        -ms-border-radius: 100%                    ;
+                        -o-border-radius: 100%                    ;
+                        &.galaxy{
+                            background-image: url('../img/galaxy-cinema.png');
+                            background-size: contain;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                        }
+                        &.lotte{
+                            background-image: url('../img/lotte-cinema-vi-t-nam-logo.png');
+                            background-size: contain;
+                            background-position: center;
+                        }
+                        &.cgv{
+                            background-image: url('../img/512x512bb.jpg');
+                            background-size: contain;
+                            background-position: center;
+                        }
+}
+                    .title_text{
+                        width: 71%;
+                        height: 100%;
+                        padding-left: 10px;
+                        display: inline-block;
+                        line-height: 80px;
+                        color: $color-black;
+                        font-size: $fs-3;
+                    }
+                }
+            }
+        }
+    }
+}
+// hiển thị trên màn hình desktop loại lớn
+@media (min-width: 1200px){
+    .movie_theaters{
+        width: 100%;
+        height: 80px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        ul{
+            width: 60%;
+            list-style: none;
+            height: 100%;
+            display: flex;
+            li{
+                width: 33.3333333333%;
+                height: 100%;
+                &:nth-child(2){
+                    margin-top: 0px;
+                }
+                &:nth-child(3){
+                    margin-top: 0px;
+                }
+                a{
+                    display: block;
+                    width: 100%;
+                    height:100%;
+                    text-decoration: none;
+                    display: flex;
+                    &.item_galaxy span:nth-child(2), &.item_lotte span:nth-child(2), &.item_cgv span:nth-child(2){
+                        transition:0.5s;
+                    -webkit-transition:0.5s;
+                    -moz-transition:0.5s;
+                    -ms-transition:0.5s;
+                    -o-transition:0.5s;
+                    }
+                    &.item_galaxy:hover>span:nth-child(2){
+                        color: $color-orange;
+                    }
+                    &.item_lotte:hover > span:nth-child(2){
+                        color: $color-red;
+                    }
+                    &.item_cgv:hover > span:nth-child(2){
+                        color: $color-red;
+                    }
+                    .movie_theaters_avatar{
+                        width: 29%;
+                        height: 90%;
+                        display: inline-block;
+                        border-radius: 100%;                    ;
+                        -webkit-border-radius: 100%                    ;
+                        -moz-border-radius: 100%                    ;
+                        -ms-border-radius: 100%                    ;
+                        -o-border-radius: 100%                    ;
+                        &.galaxy{
+                            background-image: url('../img/galaxy-cinema.png');
+                            background-size: contain;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                        }
+                        &.lotte{
+                            background-image: url('../img/lotte-cinema-vi-t-nam-logo.png');
+                            background-size: contain;
+                            background-position: center;
+                        }
+                        &.cgv{
+                            background-image: url('../img/512x512bb.jpg');
+                            background-size: contain;
+                            background-position: center;
+                        }
+}
+                    .title_text{
+                        width: 71%;
+                        height: 90%;
+                        padding-left: 10px;
+                        display: inline-block;
+                        line-height: 80px;
+                        color: $color-black;
+                        font-size: $fs-3;
+                    }
+                }
+            }
+        }
+    }
+}

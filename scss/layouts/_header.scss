@@ -1,0 +1,40 @@
+.header{
+    background-color: $color-black;
+    color: $color-white;
+    padding: 10px 20px;
+    transition: all 0.6s;
+    .navbar-brand{
+        color: $color-white;
+        font-size: 16px;
+        font-weight: 700;
+        &:hover{
+            color: $color-white;
+        }
+    }
+    .navbar-nav{
+        .nav-item{
+            position: relative;
+            padding: 0 20px;
+            // background-color: red;
+            .nav-link{
+                color: $color-white;
+                font-size: 14px;
+                // letter-spacing: 1px;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                background-color: white;
+                height: 5px;
+                width: 5px;
+                border-radius: 50%;
+                bottom: 34%;
+                right: 14%;
+
+            }
+        }
+    }
+    &.header-scroll {
+        background-color: #151515;
+    }
+}

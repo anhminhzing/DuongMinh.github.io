@@ -1,0 +1,69 @@
+.work{
+    background-color: $color-black;
+    padding: 50px 0;
+    overflow: hidden;
+    .left_content{
+        width: 100%;
+        padding: 20px;
+        min-height: 500px;
+        height: 650px;
+        color: $color-white;
+        border: 1px solid orange;
+        
+        @include respond-to("medium"){
+            min-height: 400px;
+            height: 550px;
+        }
+        .object{
+            // padding-left: 20px;
+            width: 100%;
+            margin: 10px auto; 
+            span{
+                font-size: 30px;
+                // @include respond-to("large"){
+                //     font-size: 16px !important;
+                // }
+                @include respond-to("medium"){
+                    font-size: 20px;
+                }
+            }
+            .hightlight{
+                padding-left: 20px;
+                color: orange;
+            }
+            span.child_obj{
+                padding-left: 80px;
+            }
+        }
+    }
+    .right_content{
+        width: 100%;
+        height: 100%;
+        // height: 100%;
+        @include respond-to("medium"){
+            height: 500px;
+        }
+        margin: auto;
+        color: $color-white;
+        position: relative;
+        .progressbar{
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            h5{
+                color: $color-white;
+                margin: 10px 0;
+            }
+            .progress-bar{
+                background-color: orange;
+            }
+        }
+    }
+    @-webkit-keyframes animate-positive{
+        0% { width: 0%; }
+    }
+    @keyframes animate-positive{
+        0% { width: 0%; }
+    }
+}

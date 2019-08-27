@@ -1,0 +1,81 @@
+.slick2{
+    // max-height: 300px;
+    background-image: linear-gradient(to bottom, #ffffff, #fafafd 22%, #f5f6fb);
+    .slick_content3{
+        width: 100%;
+        height: auto;
+        margin: auto;
+        .item{
+            width: 100%;
+            border: 2px solid white;
+            border-radius:     100%    ;
+            -webkit-border-radius:     100%    ;
+            -moz-border-radius:     100%    ;
+            -ms-border-radius:     100%    ;
+            -o-border-radius:     100%    ;
+            transition: all 0.5s            ;
+            -webkit-transition: all 0.5s            ;
+            -moz-transition: all 0.5s            ;
+            -ms-transition: all 0.5s            ;
+            -o-transition: all 0.5s            ;
+        } 
+         .slick-active{
+            margin-top: 50px !important;
+         }
+         .slick-slide{
+            margin-top: 50px !important;
+         }
+         .slick-center img {
+            transform: scale(1.6);
+            width: 87%;
+            height: auto;
+         }
+        .slick-center{
+            height: 180px !important;
+        }
+        .left-arrow{
+            position: absolute;
+            top: 40%;
+            left: -50px;
+            
+        }
+        .right-arrow{
+            position: absolute;
+            top: 40%;
+            right: -50px;
+        }
+    }
+    .slick_content4{
+        width: 90%;
+        margin: auto;
+        .slick-dots {
+            position: absolute;
+            left: 50%;
+            bottom: -20px;
+            // margin-top: $mg-5;
+            padding: 0px;
+            width: auto;
+            li{
+                border-radius: 50%            ;
+                -webkit-border-radius: 50%            ;
+                -moz-border-radius: 50%            ;
+                -ms-border-radius: 50%            ;
+                -o-border-radius: 50%            ;
+                width: 16px;
+                height: 16px;
+                border: 2px solid $color-grey;
+                button::before{
+                    content:'';
+                }
+                &.slick-active{
+                    background: $color-grey !important;
+                }
+            }
+            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+        }
+    }
+}

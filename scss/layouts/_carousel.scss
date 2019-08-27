@@ -1,0 +1,87 @@
+.carousel{
+    min-height: 100vh;
+    width: 100%;
+    background-color: $color-black;
+    position: relative;
+    .content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) !important;
+        // min-height: 100vh ;
+        h1{
+            font-family: 'Roboto Mono lighter' !important;
+            font-weight: lighter;
+            text-align: center;
+            line-height: 58px;
+            color: $color-white;
+            @include respond-to("medium"){
+                font-size: 30px;
+                letter-spacing: 0px;
+            }
+        }
+        span.typed{
+            font-size: 2.5rem;
+            @include respond-to("medium"){
+                font-size: 30px;
+                letter-spacing: 0px;
+            }
+        }
+        .typed-cursor{
+            // display: none !important;
+            font-size: 2.5rem;
+            @include respond-to("medium"){
+                font-size: 30px;
+                letter-spacing: 0px;
+            }
+
+        }
+    }
+    .arrow{
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        i{
+            font-size: 40px;
+            color: $color-white;
+            animation: bounce 2s infinite;
+            cursor: pointer;
+
+        }
+        @-webkit-keyframes bounce {
+            0% {
+              -webkit-transform: translateY(-20px);
+                      transform: translateY(-20px);
+            }
+            50% {
+              -webkit-transform: translateY(0px);
+                      transform: translateY(0px);
+             
+            }
+            100% {
+              -webkit-transform: translateY(-20px);
+                      transform: translateY(-20px);
+             
+             
+            }
+        }
+        @keyframes bounce {
+            0% {
+                -webkit-transform: translateY(-20px);
+                    transform: translateY(-20px);
+            }
+            50% {
+                -webkit-transform: translateY(0px);
+                    transform: translateY(0px);
+            
+            }
+            100% {
+                -webkit-transform: translateY(-20px);
+                    transform: translateY(-20px);
+            
+            
+            }
+        }
+    }
+}
