@@ -1,12 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>DuongMinh's profile</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- slick slide -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link rel="stylesheet" href="css/aos.css">
@@ -14,14 +15,14 @@
   </head>
   <body>
     <!-- preload -->
-   <!-- <div class="preload_fullpage">
+   <div class="preload_fullpage">
         <div class="wrap">
             <div class="loading">
                 <div class="bounceball"></div>
                 <div class="text">NOW LOADING</div>
             </div>
         </div>
-   </div> -->
+   </div>
     <!-- header -->
   <div class="main" >
     <header class="header">
@@ -516,15 +517,15 @@
             loop: true,
             typeSpeed: 200,
         });
-        // $(window).on("load", function () {
-        //     $('.preload_fullpage').addClass('loaded');
-        //     if ($('.preload_fullpage').hasClass('loaded')) {
-        //         $('.preload_fullpage').delay(4200).queue(function () {
-        //             $(this).remove();
-        //             // $('.main').show();
-        //         });
-        //     }
-        // }); 
+        $(window).on("load", function () {
+            $('.preload_fullpage').addClass('loaded');
+            if ($('.preload_fullpage').hasClass('loaded')) {
+                $('.preload_fullpage').delay(4200).queue(function () {
+                    $(this).remove();
+                    // $('.main').show();
+                });
+            }
+        }); 
 
     </script>
   </body>
