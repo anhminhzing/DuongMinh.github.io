@@ -20,6 +20,9 @@ p {
   font-weight: 300 !important;
   color: grey; }
 
+.main {
+  display: block; }
+
 .header {
   background-color: black;
   color: white;
