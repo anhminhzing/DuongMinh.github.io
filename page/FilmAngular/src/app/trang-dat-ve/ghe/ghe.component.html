@@ -1,3 +1,0 @@
-<button *ngIf="!Ghe.DaDat" [ngClass]="{GheDangDat : TrangThai}" (click)="DatVe()" (click)="Output_DatGhe()" #TagGhe class="btn Ghe rubberBand">{{Ghe.TenGhe}}</button>
-<button *ngIf="Ghe.DaDat"  class="btn GheDaDat" disabled>{{Ghe.TenGhe}}</button>
-<ng-content></ng-content>
