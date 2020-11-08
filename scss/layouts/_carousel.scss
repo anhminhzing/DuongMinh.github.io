@@ -8,7 +8,6 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) !important;
-        // min-height: 100vh ;
         h1{
             font-family: 'Roboto Mono lighter' !important;
             font-weight: lighter;
@@ -28,7 +27,6 @@
             }
         }
         .typed-cursor{
-            // display: none !important;
             font-size: 2.5rem;
             @include respond-to("medium"){
                 font-size: 30px;

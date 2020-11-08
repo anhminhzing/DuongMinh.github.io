@@ -127,25 +127,6 @@ p {
       .about_me .left {
         margin-top: 100px;
         height: 600px; } }
-    .about_me .left .image {
-      height: 400px;
-      width: 400px;
-      background-image: url("../img/Minhphoto.jpg");
-      background-position: center center;
-      background-size: cover;
-      position: absolute;
-      z-index: 5;
-      top: 50%;
-      left: 50%;
-      transform: translate3d(0px, 0px, 0px) translate(-50%, -50%);
-      transform-style: preserve-3d; }
-    .about_me .left .behind {
-      width: 50%;
-      height: 100%;
-      border: 5px solid white;
-      position: absolute;
-      top: 0%;
-      right: 16%; }
     .about_me .left .tilt {
       overflow: hidden;
       position: relative;
@@ -168,7 +149,6 @@ p {
       top: 0;
       left: 0; }
   .about_me .right {
-    position: relative;
     width: 100%;
     height: 100%;
     min-height: 400px; }
@@ -177,9 +157,7 @@ p {
         margin-top: 100px;
         height: 600px; } }
     .about_me .right .content {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+      padding-top: 10px;
       color: white; }
       .about_me .right .content h3 {
         padding-bottom: 10px; }
